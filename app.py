@@ -45,7 +45,7 @@ def create_livros():
     livros.append(new_livros) #insere o payload na viagens
     return new_livros, 201
 
-#post 127.0.0.1:5000/livros/autorAINSERIR
+#post 127.0.0.1:5000/livros/autorAINSERIR 
 @app.post("/livros/<string:titulo>/infos")
 def create_item(titulo):
     request_data = request.get_json()
